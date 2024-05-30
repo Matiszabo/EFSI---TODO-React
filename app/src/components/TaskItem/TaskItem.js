@@ -1,19 +1,13 @@
 import React from 'react';
+import './TaskItem.css';
 
-class TaskItem {
-  render() {
-    const { task, index } = this.props;
-
-    return (
-      <li
-        className={task.completed ? 'checked' : ''}
-        onClick={() => this.props.toggleTask(index)}
-      >
-        {task.title} - Creada: {task.creationTime}
-        <span className="close" onClick={() => this.props.deleteTask(index)}>&times;</span>
-      </li>
-    );
-  }
-}
+const TaskItem = ({ tarea, index, estadoTarea, borrar }) => {
+  return (
+    <li className={tarea.completa ? 'checked' : ''} onClick={() => estadoTarea(index)}>
+      {tarea.title}
+      <span className="close" onClick={(e) => { e.stopPropagation(); borrar(index); }}>x</span>
+    </li>
+  );
+};
 
 export default TaskItem;
