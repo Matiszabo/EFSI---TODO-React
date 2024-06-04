@@ -31,7 +31,8 @@ const App = () => {
   };
 
   const borrar = (index) => {
-    const actualizadas = tasks.filter((_, i) => i !== index);
+    const actualizadas = tasks.slice();
+    actualizadas.splice(index, 1);
     setTasks(actualizadas);
   };
 
