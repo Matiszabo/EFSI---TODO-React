@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Header.css';
 
-const Header = ({ anadirtarea, buscarMasrapida }) => {
+const Header = ({ crearTarea, buscarMasrapida }) => {
   const [inputValue, setInputValue] = useState('');
 
   const publicarTarea = () => {
@@ -9,7 +9,7 @@ const Header = ({ anadirtarea, buscarMasrapida }) => {
       alert('Debes escribir algo!');
       return;
     }
-    anadirtarea(inputValue);
+    crearTarea(inputValue);
     setInputValue('');
   };
 

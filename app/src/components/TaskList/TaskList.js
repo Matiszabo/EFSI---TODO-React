@@ -11,11 +11,10 @@ const TaskList = ({ tasks, estadoTarea, borrar }) => {
           tarea={tarea} 
           index={index} 
           estadoTarea={estadoTarea} 
-          borrar={borrar} 
+          borrar={borrar}
         />
       ))}
     </ul>
   );
 };
-
 export default TaskList;

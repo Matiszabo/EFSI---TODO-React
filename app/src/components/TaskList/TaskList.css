@@ -20,18 +20,3 @@
   .checked {
     text-decoration: line-through;
   }
-  
-  .close {
-    position: absolute;
-    right: 5px;
-    top: 50%;
-    transform: translateY(-50%);
-    padding: 0 5px;
-    color: #000;
-    cursor: pointer;
-  }
-  
-  .close:hover {
-    color: #f44336;
-  }
-  

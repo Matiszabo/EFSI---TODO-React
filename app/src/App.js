@@ -6,7 +6,7 @@ import './App.css';
 const App = () => {
   const [tasks, setTasks] = useState([]);
 
-  const anadirtarea = (title) => {
+  const crearTarea = (title) => {
     const nuevaTarea = {
       title,
       creada: new Date().toISOString(),
@@ -61,7 +61,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header anadirtarea={anadirtarea} buscarMasrapida={buscarMasrapida} />
+      <Header crearTarea={crearTarea} buscarMasrapida={buscarMasrapida} />
       <TaskList tasks={tasks} estadoTarea={estadoTarea} borrar={borrar} />
     </div>
   );
