@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/EFSI---TODO-React.git/static/css/main.2c50834f.css",
+    "main.js": "/EFSI---TODO-React.git/static/js/main.7d18274e.js",
+    "index.html": "/EFSI---TODO-React.git/index.html",
+    "main.2c50834f.css.map": "/EFSI---TODO-React.git/static/css/main.2c50834f.css.map",
+    "main.7d18274e.js.map": "/EFSI---TODO-React.git/static/js/main.7d18274e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2c50834f.css",
+    "static/js/main.7d18274e.js"
+  ]
+}
